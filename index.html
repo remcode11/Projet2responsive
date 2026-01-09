@@ -7,7 +7,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="headerbutton">
         <button class="burger"><span></span><span></span><span></span></button>
         <button class="redbutton">Iletisim</button>
       </div>
@@ -38,20 +37,130 @@
         <button class="buttoninput">Kayit Ol</button>
       </div>
     </div>
+    <div class="kalite">
+      <h2 class="h2kalite">Kalite ve Surec Yonetimi</h2>
+      <p class="paragraphekalite">Musterilerimizin yuksek kalite seviyelerini koruyabilmeleri<br>icin farkli sektorlerde tecrube kazanmis uzman<br>kadrolarimizla Proje Yonetimi, is Analizi ve Test Yonetimi<br>hizmetleri sunmaktayiz.</p>
+    </div>
+
+    <div class="icones">
+     <div class="icone">
+      <img class="i" src="./assets/img/File.png">
+      <h2 class="t">Dokuman Analizi</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum.</p>
+     </div>
+     <div class="icone">
+      <img class="i" src="./assets/img/Star.png">
+      <h2 class="t">Kabul ve Degerlendirme</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
+     </div>
+     <div class="icone">
+      <img class="i" src="./assets/img/ChartPieSlice.png">
+      <h2 class="t">Paydas Analizi</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
+     </div>
+     <div class="icone">
+      <img class="i" src="./assets/img/ChartBar.png">
+      <h2 class="t">Akis Diyagramlari</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
+     </div>
+     <div class="icone">
+      <img class="i" src="./assets/img/FigmaLogo.png">
+      <h2 class="t">Prototipleme</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
+     </div>
+     <div class="icone">
+      <img class="i" src="./assets/img/Crown.png">
+      <h2 class="t">Is Kurallari Analizi</h2>
+      <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
+     </div>
+    </div>
+
+    <div class="rouge">
+     <img class="fondrouge" src="./assets/img/Frame 3.png">
+     <div class="hautrouge">
+      <div class="titrerouge">Test Yonetimiyle<br>Neler Sagliyotuz?</div>
+     </div>
+     <div class="pr1">
+      <div class="tr">Yazilim Kalitesini<br>Arttiriyoruz</div>
+      <img class="ir" src="./assets/img/CaretCircleDoubleRight.png">
+     </div>
+     <div class="pr2">
+      <div class="tr">Olasi Hatalari<br>Onceden Belirliyoruz</div>
+      <img class="ir" src="./assets/img/CaretCircleDoubleRight.png">
+     </div>
+     <div class="pr3">
+      <div class="tr"><br>Arttiriyoruz</div>
+      <img class="ir" src="./assets/img/CaretCircleDoubleRight.png">
+     </div>
+     <div class="pr4">
+      <div class="tr">Yazilim Kalitesini<br>Arttiriyoruz</div>
+     </div>
   </body>
 </html>
 
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
   .header {
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 10;
     width: 100%;
     top: 0;
     right: 0;
     left: 0;
+    padding-top: 20px;
   }
 
   .redbutton {
@@ -61,11 +170,13 @@
     color: #ffffff;
     font-family: "Manrope", sans-serif;
     font-weight: 700;
+    margin-right: 100px;
   }
 
   .burger {
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
   }
 
   .hero {
@@ -124,4 +235,122 @@
     top: 61.5%;
     left: 61%;
   }
+
+  .kalite {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 41px;
+  }
+
+  .h2kalite {
+    margin-top: 60px;
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+
+  .paragragraphekalite {
+    font-size: 12px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+
+  .icones {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .t {
+    font-size: 24px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+  }
+
+  .p {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+  }
+
+  .icone {
+    margin-bottom: 80px;
+  }
+
+  .i {
+    padding-bottom: 10px;
+  }
+
+  .fondrouge {
+    width: 100%;
+    background-color: #f84646;
+  }
+
+  .rouge {
+    position: relative;
+  }
+
+  .titrerouge {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:10%;
+    left: 50%;
+    color: #ffffff;
+    font-family: "Manrope", sans-serif;
+    font-weight: 800;
+    font-size: 36px;
+  }
+
+  .pr1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:30%;
+    left:50%;
+    fon
+  }
+
+  .pr2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+  }
+
+
+  .pr3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:70%;
+    left:50%;
+  }
+
+
+  .pr4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:90%;
+    left:50%;
+  }
+
+
+  .tr {
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .pr1, .pr2, .pr3, .pr4 {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ir {
+   padding-top: 40px;
+  }
+
 </style>
