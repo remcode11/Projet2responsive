@@ -28,19 +28,16 @@
           hizmetleri sunmaktayiz.
         </p>
       </div>
-      <div class="inputbottom">
-        <input
-          class="input"
-          type="text"
-          placeholder="Mail bultenimize kayitol"
-        />
+      <div class="background">
+       <div class="fake-input">
+        <input class="carre" type="text" placeholder="Mail bultenimize kayit ol" id="input-name"/>
         <button class="buttoninput">Kayit Ol</button>
+       </div>
       </div>
-    </div>
-    <div class="kalite">
-      <h2 class="h2kalite">Kalite ve Surec Yonetimi</h2>
-      <p class="paragraphekalite">Musterilerimizin yuksek kalite seviyelerini koruyabilmeleri<br>icin farkli sektorlerde tecrube kazanmis uzman<br>kadrolarimizla Proje Yonetimi, is Analizi ve Test Yonetimi<br>hizmetleri sunmaktayiz.</p>
-    </div>
+      <div class="kalite">
+        <h2 class="h2kalite">Kalite ve Surec Yonetimi</h2>
+        <p class="paragraphekalite">Musterilerimizin yuksek kalite seviyelerini koruyabilmeleri<br>icin farkli sektorlerde tecrube kazanmis uzman<br>kadrolarimizla Proje Yonetimi, is Analizi ve Test Yonetimi<br>hizmetleri sunmaktayiz.</p>
+      </div>
 
     <div class="icones">
      <div class="icone">
@@ -73,7 +70,14 @@
       <h2 class="t">Is Kurallari Analizi</h2>
       <p class="p">Ante vulputate ut at accumsan et<br>Feugiat at tempus, est senectus<br>amet, elementum</p>
      </div>
-    </div>
+     <div class="ronds">
+      <img class="r1" src="./assets/img/Ellipse 1.png">
+      <img class="r2" src="./assets/img/Ellipse 2.png">
+      <img class="r3" src="./assets/img/Ellipse 3.png">
+      <img class="r4" src="./assets/img/Ellipse 4.png">
+      <img class="r5" src="./assets/img/Ellipseb.png">
+      <img class="r6" src="./assets/img/Ellipsed.png">
+     </div>
 
     <div class="rouge">
      <img class="fondrouge" src="./assets/img/Frame 3.png">
@@ -95,6 +99,7 @@
      <div class="pr4">
       <div class="tr">Yazilim Kalitesini<br>Arttiriyoruz</div>
      </div>
+   
   </body>
 </html>
 
@@ -171,13 +176,30 @@ table {
     font-family: "Manrope", sans-serif;
     font-weight: 700;
     margin-right: 100px;
+    height: 40px;
+    width: 90px;
   }
 
   .burger {
-    display: flex;
-    flex-direction: column;
-    margin-left: 100px;
-  }
+  width: 30px;
+  height: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 100px;
+  background: none;
+  border: none;
+  outline:none;
+}
+
+.burger span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 2px;
+}
 
   .hero {
     position: relative;
@@ -194,7 +216,7 @@ table {
     font-family: "Manrope", sans-serif;
     font-weight: 800;
     transform: translate(-50%, -50%);
-    top: 25%;
+    top: 8%;
     left: 50%;
   }
 
@@ -205,24 +227,37 @@ table {
     font-weight: 400;
     font-size: 12px;
     transform: translate(-50%, -50%);
-    top: 47%;
+    top:15%;
     left: 50%;
   }
 
-  .input {
+  .background {
     position: absolute;
-    height: 59.85px;
-    width: 335px;
-    border-radius: 10px;
-    border: none;
-    padding-left: 15px;
     transform: translate(-50%, -50%);
-    top: 61.5%;
     left: 50%;
+    top:25%;
   }
+
+  .fake-input {
+    padding: 2px 18px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    height: 60px;
+    display: flex;
+  }
+
+ 
+
+ .carre {
+  border: none;
+  outline: none;
+  background: transparent;
+  box-shadow: none;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
 
   .buttoninput {
-    position: absolute;
     background-color: #f84646;
     height: 50.01px;
     width: 90.76px;
@@ -231,9 +266,11 @@ table {
     color: #ffffff;
     border-radius: 15px;
     border: none;
-    transform: translate(-50%, -50%);
-    top: 61.5%;
-    left: 61%;
+    margin-top: 4px;
+  }
+
+  .buttoninput:hover {
+    background-color: purple;
   }
 
   .kalite {
@@ -261,6 +298,49 @@ table {
     display: flex;
     flex-direction: column;
     text-align: center;
+    position: relative;
+  }
+
+  .r1 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:10.6%;
+    left: 51%; 
+  }
+
+  .r2 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 20.8%;
+    left: 51%;
+  }
+
+  .r3 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top:0.25%;
+    left: 51%;
+  }
+
+  .r4 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 16%;
+    left: 49%;
+  }
+
+  .r5 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 5.8%;
+    left: 49%;
+  }
+
+  .r6 {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 26.3%;
+    left: 51%;
   }
   
   .t {
@@ -309,7 +389,6 @@ table {
     transform: translate(-50%, -50%);
     top:30%;
     left:50%;
-    fon
   }
 
   .pr2 {
