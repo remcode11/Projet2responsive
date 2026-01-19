@@ -14,6 +14,13 @@
   <body>
     <header class="header">
       <button class="burger"><span></span><span></span><span></span></button>
+      <ul class="burgerdesktop">
+       <li class="bd1">Cozum ve Hizmetler</li>
+       <li class="bd2">Urunler</li>
+       <li class="bd3">Teknolojiler</li>
+       <li class="bd4">Insan Kaynaklari</li>
+       <li class="bd5">Kurumsal</li>
+      </ul>
       <button class="redbutton">Iletisim</button>
     </header>
 
@@ -154,11 +161,11 @@
           <img src="./assets/img/Illustration.jpg" />
           <h2 class="h2illus">Kalite ve Surec<br />Yonetimi</h2>
           <p class="pillus">
-            Deneyimli kadromuz; bircok farkli sektorden<br />deneyimli PMP®
-            sertifikasina sahip, uzman proje<br />yoneticilerinden
-            olusmaktadir.Projelerinizin<br />yonetimine destek olmak, zayif
-            oldugunu<br />dusundugunuz alanlari glucendirmek, uluslararasi<br />gecerliligi
-            olan PMI metodolojisini sirketinizde<br />uygulamak ve gelistirmek
+            Deneyimli kadromuz; bircok farkli sektorden deneyimli PMP®
+            sertifikasina sahip, uzman proje yoneticilerinden
+            olusmaktadir.Projelerinizin yonetimine destek olmak, zayif
+            oldugunu dusundugunuz alanlari glucendirmek, uluslararasi gecerliligi
+            olan PMI metodolojisini sirketinizde uygulamak ve gelistirmek
             ici yaninizdayiz.
           </p>
           <button class="billus">Kesfet</button>
@@ -168,11 +175,11 @@
           <img src="./assets/img/Illustration2.jpg" />
           <h2 class="h2illus">Kalite ve Surec<br />Yonetimi</h2>
           <p class="pillus">
-            Deneyimli kadromuz; bircok farkli sektorden<br />deneyimli PMP®
-            sertifikasina sahip, uzman proje<br />yoneticilerinden
-            olusmaktadir.Projelerinizin<br />yonetimine destek olmak, zayif
-            oldugunu<br />dusundugunuz alanlari glucendirmek, uluslararasi<br />gecerliligi
-            olan PMI metodolojisini sirketinizde<br />uygulamak ve gelistirmek
+            Deneyimli kadromuz; bircok farkli sektorden deneyimli PMP®
+            sertifikasina sahip, uzman proje yoneticilerinden
+            olusmaktadir.Projelerinizin yonetimine destek olmak, zayif
+            oldugunu dusundugunuz alanlari glucendirmek, uluslararasi gecerliligi
+            olan PMI metodolojisini sirketinizde uygulamak ve gelistirmek
             ici yaninizdayiz.
           </p>
           <button class="billus">Kesfet</button>
@@ -259,6 +266,7 @@
     justify-content: space-between;
     padding: 20px 100px;
     z-index: 10;
+    align-items: center;
   }
 
   .burger {
@@ -274,6 +282,16 @@
   .burger span {
     height: 2px;
     background: black;
+  }
+
+  .burgerdesktop {
+    height: 14px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    gap:40px
   }
 
   .redbutton {
@@ -448,7 +466,7 @@
   /* ROUGE */
   .rouge {
     position: relative;
-    height: 700px;
+    height: 836px;
     background-color: #f84646;
     margin-top: 90px;
   }
@@ -465,7 +483,7 @@
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 36px;
+    font-size: 20px;
     font-weight: 800;
   }
 
@@ -476,7 +494,7 @@
     text-align: center;
     color: white;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .pr1 {
@@ -680,55 +698,83 @@
 
 /*reponsive Hero*/
 
- @media screen and (max-width: 600px) {
-  .titleheader {font-size: 28px;
+@media screen and (min-width: 1023px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 100px;
+    z-index: 10;
+    align-items: center;
   }
-  .paragrapheheader{ position: absolute; top:47%;
-  }
-  .background { position:absolute; top:75%;
-  }
-}
 
-@media screen and (max-width: 380px) {
-  .titleheader {font-size: 24px;
-  }
-  .paragrapheheader{ position: absolute; top:47%;
-    font-size: 10px;
-  }
-  .background { position:absolute; top:80%;
-  }
 }
+  
 
-@media screen and (max-width:351px) {
-.titleheader {font-size: 18px;}
-}
-
-/* Responsive Rouge*/
-
-@media screen and (max-width: 668px)  {
-.titrerouge { font-size: 25px;
-}
-}
-
-@media screen and (max-width: 444px) {
-  .titrerouge {
+ @media screen and (min-width: 1px) {
+  .titleheader {
     font-size: 20px;
-  }  
+  }
+  .burgerdesktop {
+    display:none;
+  }
+ }
+
+ @media screen and (min-width:1px) {
+  .paragrapheheader {
+    font-size: 11px;
+  }
 }
 
-@media screen and (max-width: 350px) {
-  .titrerouge {
-    font-size: 17px;
-  }
-  .pr {
-    font-size: 15px;
+@media screen and (min-width: 1023px) {
+  .header {
+    padding-right: 40px;
   }
 }
+
+
+
+@media screen and (min-width:1023px) {
+  .burger {
+    display:none;
+  }
+  .burgerdesktop {
+    display: flex;
+    padding-right: 40px;
+  }
+}
+
+
+/*reponsive Rouge*/
+
+
+
+ 
+
+
+
+
+
+
+
+
+
   
 
 
 
-/* Responsive Icones*/
+
+
+  
+
+  
+
+  
+
+
+
+
 
 
   
