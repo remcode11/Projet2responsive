@@ -27,9 +27,13 @@
     <!-- HERO -->
     <section class="hero">
       <img class="imgheader" src="./assets/img/Rectangle 1.png" alt="" />
+      <img class="imgheaderdesktop" src="./assets/img/rectangle 2.png" alt="" />
 
       <h1 class="titleheader">
         Bigli<br />Teknolojilerinde<br />23 Yillik Tecrube
+      </h1>
+
+      <h1 class="titleheaderdesktop">Bigli Teknolojilerinde<br />23 Yillik Tecrube
       </h1>
 
       <p class="paragrapheheader">
@@ -64,7 +68,7 @@
 
     <!-- ICONES -->
     <section class="icones">
-      <div class="icone">
+      <div class="icone ic1">
         <img class="i" src="./assets/img/File.png" />
         <h2 class="t">Dokuman Analizi</h2>
         <p class="p">
@@ -73,7 +77,7 @@
         </p>
       </div>
 
-      <div class="icone">
+      <div class="icone ic2">
         <img class="i" src="./assets/img/Star.png" />
         <h2 class="t">Kabul ve Degerlendirme</h2>
         <p class="p">
@@ -82,7 +86,7 @@
         </p>
       </div>
 
-      <div class="icone">
+      <div class="icone ic3">
         <img class="i" src="./assets/img/ChartPieSlice.png" />
         <h2 class="t">Paydas Analizi</h2>
         <p class="p">
@@ -91,7 +95,7 @@
         </p>
       </div>
 
-      <div class="icone">
+      <div class="icone ic4">
         <img class="i" src="./assets/img/ChartBar.png" />
         <h2 class="t">Akis Diyagramlari</h2>
         <p class="p">
@@ -100,7 +104,7 @@
         </p>
       </div>
 
-      <div class="icone">
+      <div class="icone ic5">
         <img class="i" src="./assets/img/FigmaLogo.png" />
         <h2 class="t">Prototipleme</h2>
         <p class="p">
@@ -109,7 +113,7 @@
         </p>
       </div>
 
-      <div class="icone">
+      <div class="icone ic6">
         <img class="i" src="./assets/img/Crown.png" />
         <h2 class="t">Is Kurallari Analizi</h2>
         <p class="p">
@@ -135,22 +139,22 @@
       <div class="titrerouge">Test Yonetimiyle<br />Neler Sagliyoruz?</div>
 
       <div class="pr pr1">
-        <div class="tr">Yazilim Kalitesini<br />Arttiriyoruz</div>
-        <img class="ir" src="./assets/img/CaretCircleDoubleRight.png" />
+        <div class="tr tr1">Yazilim Kalitesini<br />Arttiriyoruz</div>
+        <img class="ir ir1" src="./assets/img/CaretCircleDoubleRight.png" />
       </div>
 
       <div class="pr pr2">
-        <div class="tr">Olasi Hatalari<br />Onceden Belirliyoruz</div>
-        <img class="ir" src="./assets/img/CaretCircleDoubleRight.png" />
+        <div class="tr tr2">Olasi Hatalari<br />Onceden Belirliyoruz</div>
+        <img class="ir ir2" src="./assets/img/CaretCircleDoubleRight.png" />
       </div>
 
       <div class="pr pr3">
-        <div class="tr">Surec Verimliligini<br />Arttiriyoruz</div>
-        <img class="ir" src="./assets/img/CaretCircleDoubleRight.png" />
+        <div class="tr tr3">Surec Verimliligini<br />Arttiriyoruz</div>
+        <img class="ir ir3" src="./assets/img/CaretCircleDoubleRight.png" />
       </div>
 
       <div class="pr pr4">
-        <div class="tr">Musteri Memnuniyetini<br />Arttiriyoruz</div>
+        <div class="tr tr4">Musteri Memnuniyetini<br />Arttiriyoruz</div>
       </div>
     </section>
 
@@ -252,24 +256,66 @@
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Manrope", sans-serif;
-  }
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-  .header {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+ .header {
     position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 20px 100px;
     z-index: 10;
-    align-items: center;
+    padding-top: 35px;
   }
 
-  .burger {
+.burger {
     width: 30px;
     height: 22px;
     display: flex;
@@ -277,6 +323,7 @@
     justify-content: space-between;
     background: none;
     border: none;
+    margin-left: 20px;
   }
 
   .burger span {
@@ -298,12 +345,13 @@
     background: #f84646;
     color: white;
     border: none;
-    padding: 10px 20px;
     border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
     height: 40px;
     width: 90px;
+    margin-right: 70px;
+
   }
 
   .buttoninput {
@@ -359,7 +407,7 @@
   }
   .background {
     height: 60px;
-    width: 335px;
+    width: 350px;
     top: 70%;
   }
 
@@ -435,8 +483,8 @@
 
   .r2 {
     position: absolute;
-    top: 69.5%;
-    left: 49%;
+    top: 70%;
+    left: 48%;
   }
 
   .r3 {
@@ -447,14 +495,14 @@
 
   .r4 {
     position: absolute;
-    top: 53%;
-    left: 48%;
+    top: 53.5%;
+    left: 45.5%;
   }
 
   .r5 {
     position: absolute;
-    top: 18%;
-    left: 47%;
+    top: 18.3%;
+    left: 44%;
   }
 
   .r6 {
@@ -464,18 +512,18 @@
   }
 
   /* ROUGE */
-  .rouge {
-    position: relative;
-    height: 836px;
-    background-color: #f84646;
-    margin-top: 90px;
-  }
+.rouge {
+  position: relative;
+  background-image: url("./assets/img/Frame 3.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f84646;
+}
 
-  .fondrouge {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+ .fondrouge {
+  display: none;
+}
 
   .titrerouge {
     position: absolute;
@@ -487,15 +535,18 @@
     font-weight: 800;
   }
 
-  .pr {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-  }
+/* MOBILE : texte + image superposés (comme avant) */
+.pr {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .pr1 {
     top: 30%;
@@ -530,6 +581,7 @@
 
   .illustration img {
     width: 100%;
+    margin-bottom: 15px;
   }
 
   .h2illus {
@@ -592,17 +644,17 @@
 
   .c1 {
     position: absolute;
-    top: 24.7%;
+    top: 23%;
   }
 
   .c2 {
     position: absolute;
-    top: 37.2%;
+    top: 36%;
   }
 
   .c3 {
     position: absolute;
-    top: 52%;
+    top: 51%;
   }
 
   .c4 {
@@ -655,6 +707,7 @@
     height: 42px;
     width: 124px;
     margin-top: 20px;
+    white-space: nowrap;
   }
 
   .last {
@@ -728,104 +781,192 @@
 }
 
 
-/*reponsive Hero*/
+/*reponsive Header et Hero*/
 
-@media screen and (min-width: 1023px) {
-  .header {
-    position: fixed;
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px 100px;
-    z-index: 10;
-    align-items: center;
-  }
-
-}
-  
-
- @media screen and (min-width: 1px) {
-  .titleheader {
-    font-size: 20px;
-  }
-  .burgerdesktop {
-    display:none;
-  }
+@media screen and (min-width:768px) {
+.burgerdesktop {
+  display: none; 
  }
-
- @media screen and (min-width:1px) {
-  .paragrapheheader {
-    font-size: 11px;
-  }
+ .imgheaderdesktop {
+  display:none;
+ }
 }
 
-@media screen and (min-width: 1023px) {
-  .header {
-    padding-right: 40px;
-  }
-}
-
-
-
-@media screen and (min-width:1023px) {
-  .burger {
+@media screen and (min-width: 768px) {
+  .burgerdesktop {
     display:none;
+  } 
+}
+
+@media  screen and (min-width: 768px) {
+  .titleheaderdesktop {
+    display: none;
+  } 
+}
+
+
+@media screen and (min-width: 1024px) {
+  .imgheader {
+    display: none;
+  }
+  .burger {
+    display: none;
   }
   .burgerdesktop {
     display: flex;
-    padding-right: 40px;
   }
+  .imgheaderdesktop {
+    display: flex;
+    width: 100%;
+  }
+  .header{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+  }
+  .redbutton {
+    margin-left: 40px;
+  }
+
+  .titleheader {
+    display: none;
+  }
+
+  .titleheaderdesktop {
+    display: flex;
+    position: absolute;
+    left: 7%;
+    top: 25%;
+    text-align: start;
+    font-weight: 800;
+    font-size: 56px;
+  }
+
+  .paragrapheheader {
+    position: absolute;
+    left: 29%;
+    top: 50%;
+    text-align: start;
+    font-size: 16px;
+  }
+
+  .background {
+    position: absolute;
+    left: 25.7%;
+    top: 66%
+  }
+
+
+  
+/*reponsive Icones*/
+
+@media screen and (min-width: 1024px) {
+  .icones {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  }
+  .ic3 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.ic4 {
+  grid-column: 1;
+  grid-row: 2;
+}
+}
+
+.ic5 { 
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.ic6 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.r1 {
+  position: absolute;
+  top: 32%;
+  left: 75%;
+}
+
+.r2 {
+  position:absolute;
+  top:65%;
+  left:75%;
+}
+
+.r3 {
+  position: absolute;
+  top:0%;
+  left:24%;
+}
+
+.r4 {
+  position: absolute;
+  top:34.5%;
+  left:22%;
+}
+
+.r5 {
+  position: absolute;
+  top:0%;
+  left:75%;
+}
+
+.r6 {
+  position: absolute;
+  top: 68%;
+  left: 25%;
 }
 
 
 /*reponsive Rouge*/
 
-@media screen and (min-width:1px) {
-  .titrerouge {
-    font-size: 18px;
+/* DESKTOP : alignement horizontal */
+@media screen and (min-width:1024px) {
+  .rouge {
+    display: flex;
+    justify-content: space-around; /* espace entre chaque pr */
+    align-items: flex-start;       /* aligne tous les textes en haut */
+    padding: 50px;
+    height: auto;                  /* laisse la hauteur automatique */
   }
-  
+
+  .titrerouge {
+     position: relative;  
+    margin-bottom: 50px;  
+    text-align: center;
+  }
+
+  .pr {
+    position: relative;            /* plus besoin d absolute */
+    margin: 0;                     /* enlève le centrage automatique */
+    text-align: center;
+  }
+
+  .tr {
+    font-size: 20px;
+  }
+
+  .ir {
+    margin-top: 20px;
+  }
 }
+
+
+
+
 
 
 
 /*reponsive Referans*/
 
-@media screen and (min-width:1px) {
-  .c1 {
-    position: absolute;
-    top: 27%;
-  }
-}
-
-@media screen and (min-width:329px) {
-  .c1 {
-    position: absolute;
-    top: 25%;
-  }
-
-
-
-
 
 
   
-
-
-
-
-
-  
-
-  
-
-  
-
-
-
-
-
-
-  
-
 </style>
