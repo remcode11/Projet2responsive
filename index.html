@@ -93,11 +93,33 @@
             <input class="inphero" type="text" id="input-name" placeholder="Mail bultenimize kayit ol" />
             <button class="boutonrougehero">Kayit Ol</button>
           </div>
-
          </div>
-          
-
         </div>
+        
+         <!--mobile kalite-->
+
+        <div class="mobilekalite">
+          <div class="titlekalitemobile">Kalite vs Surec Yonetimi</div>
+          <p class="mobilepkalite">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri<br>
+          icin farki sektorlerde tecrube kazanmis uzman<br>
+          kadrolarimizla Proje Yonetimi, is Analizi ve Test Yonetimi<br>
+          hizmetleri sunmaktayiz.</p>
+        </div>
+
+        <!--desktop kalite-->
+
+          <div class="desktopkalite">
+          <div class="titlekalitedesktop">Kalite vs Surec Yonetimi</div>
+          <p class="desktoppkalite">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri
+          icin farki<br>sektorlerde tecrube kazanmis uzman
+          kadrolarimizla Proje Yonetimi, is Analizi<br>ve Test Yonetimi
+          hizmetleri sunmaktayiz.</p>
+        </div>
+
+      
+
+
+
 
 
       
@@ -538,6 +560,50 @@ table {
   }
   
 }
+
+/*responsive Kalite*/
+
+@media screen and (min-width: 300px) {
+
+  .mobilekalite {
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    gap:15px;
+  }
+
+  .titlekalitemobile {
+    margin-top: 60px;
+    font-weight: 800;
+    font-size: 24px;
+  }
+
+  .desktopkalite {
+    display:none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+.mobilekalite {
+  display: none;
+}
+
+.desktopkalite {
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+  gap: 30px;
+}
+
+.titlekalitedesktop {
+  margin-top: 120px;
+  font-weight: 800;
+  font-size: 36px;
+}
+}
+  
+
 
 
 
