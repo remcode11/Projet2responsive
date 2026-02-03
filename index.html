@@ -4,607 +4,482 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bilgi Teknolojilerinde</title>
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
-      rel="stylesheet"
-    />
   </head>
 
-</html>
-
-
-
   <body>
-
     <div class="container">
+      <div class="site-header">
+        <!-- Bouton burger visible uniquement en mobile (label) -->
+        <label for="nav-toggle" class="burger" aria-label="Ouvrir le menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
 
-      <!-- Header et navigation -->
+        <!-- Navigation principale -->
+        <nav class="nav" aria-label="Navigation principale">
+          <a href="#">Cozum ve Hizmetler</a>
+          <a href="#">Urunler</a>
+          <a href="#">Teknolojiler</a>
+          <a href="#">Insan Kaynaklari</a>
+          <a href="#">Kurumsal</a>
+        </nav>
 
-        <div class="header">
-        <!--Burger Mobile-->
-          <div class="burger"><span></span>
-                              <span></span>
-                              <span></span>
-          </div>
-
-        <!--Nav Desktop-->
-
-          <nav class="navheader" aria-label="Navigation principale">
-            <a  class="navi" href="#">Corum ve hizmetler</a>
-            <a  class="navi" href="#">Urunler</a>
-            <a  class="navi" href="#">Teknolojiler</a>
-            <a  class="navi" href="#">Insan Kaynaklari</a>
-            <a  class="navi" href="#">Kurumsal</a>
-          </nav>
-
-          <button class="buttonheader">Iletisim
-          </button>  
-
-        </div> 
-
-        <!--Hero-->
-
-        <div class="hero">
-
-          <!--image hero mobile-->
-
-           <img class="imghero" src="./assets/img/Mask Group.png">
-
-           <!--image hero desktop-->
-
-           <img class="imgherodesktop" src="./assets/img/Rectangle 1(1).png">
-
-         <div class="flexhero">
-          
-         
-
-          <!--titre hero mobile-->
-
-          <div class="titreheromobile">Bilgli<br>Teknolojilerinde<br>23 Yillik Tecrube
-          </div>
-
-          <!--titre hero desktop-->
-
-          <div class="titreherodesktop">Bilgli Teknolojilerinde<br>23 Yillik Tecrube
-          </div>
-
-
-          <!--paragraphe mobile-->
-
-          <div class="paragrapheheromobile">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri<br>icin farkli
-            sektorlerde tecrube kazanmis uzman<br> kadrolarimizla Proje Yonetimi, is
-            Analizi ve Test Yonetimi<br>hizmetleri sunmaktayiz.
-          </div>
-        
-        
-
-          <!--paragraphe hero Desktop-->
-
-          <div class="paragrapheherodesktop">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri icin farkli<br>
-            sektorlerde tecrube kazanmis uzman kadrolarimizla Proje Yonetimi, is <br>
-            Analizi ve Test Yonetimi hizmetleri sunmaktayiz.
-          </div>
-
-          <!--input hero-->
-
-          <div class="boutonetinput">
-            <div class="fondinput">
-            <input class="inphero" type="text" id="input-name" placeholder="Mail bultenimize kayit ol" />
-            <button class="boutonrougehero">Kayit Ol</button>
-          </div>
-         </div>
-        </div>
-        
-         <!--mobile kalite-->
-
-        <div class="mobilekalite">
-          <div class="titlekalitemobile">Kalite vs Surec Yonetimi</div>
-          <p class="mobilepkalite">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri<br>
-          icin farki sektorlerde tecrube kazanmis uzman<br>
-          kadrolarimizla Proje Yonetimi, is Analizi ve Test Yonetimi<br>
-          hizmetleri sunmaktayiz.</p>
-        </div>
-
-        <!--desktop kalite-->
-
-          <div class="desktopkalite">
-          <div class="titlekalitedesktop">Kalite vs Surec Yonetimi</div>
-          <p class="desktoppkalite">Musterilerimizin yuksek kalite seviyelirini koruyabilmeleri
-          icin farki<br>sektorlerde tecrube kazanmis uzman
-          kadrolarimizla Proje Yonetimi, is Analizi<br>ve Test Yonetimi
-          hizmetleri sunmaktayiz.</p>
-        </div>
-
-      
-
-
-
-
-
-      
-
+        <!--bouton du header-->
+        <button class="buttonheader">Iletisim</button>
+      </div>
     </div>
-
   </body>
-
 </html>
 
-<style> 
+<style>
+  /*google fonts*/
 
-/*police*/
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+  /* http://meyerweb.com/eric/tools/css/reset/
+         v2.0 | 20110126
+         License: none (public domain)
+      */
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-.container{
-  font-family: "Manrope" , sans-serif;
-}
-
-/*header et navigation*/
-
-  .navheader {
-    display: flex;
-    justify-content: flex-end;
-    gap: 25px;
+  html,
+  body,
+  div,
+  span,
+  applet,
+  object,
+  iframe,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  blockquote,
+  pre,
+  a,
+  abbr,
+  acronym,
+  address,
+  big,
+  cite,
+  code,
+  del,
+  dfn,
+  em,
+  img,
+  ins,
+  kbd,
+  q,
+  s,
+  samp,
+  small,
+  strike,
+  strong,
+  sub,
+  sup,
+  tt,
+  var,
+  b,
+  u,
+  i,
+  center,
+  dl,
+  dt,
+  dd,
+  ol,
+  ul,
+  li,
+  fieldset,
+  form,
+  label,
+  legend,
+  table,
+  caption,
+  tbody,
+  tfoot,
+  thead,
+  tr,
+  th,
+  td,
+  article,
+  aside,
+  canvas,
+  details,
+  embed,
+  figure,
+  figcaption,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  output,
+  ruby,
+  section,
+  summary,
+  time,
+  mark,
+  audio,
+  video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
   }
-
-  .navi {
-    color: #000;
-    font-size: 14px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-
-  .burger {
-    width: 30px;
-    height: 22px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
-  .burger span {
+  /* HTML5 display-role reset for older browsers */
+  article,
+  aside,
+  details,
+  figcaption,
+  figure,
+  footer,
+  header,
+  hgroup,
+  menu,
+  nav,
+  section {
     display: block;
-    height: 2px;
-    width: 100%;
-    background: #000;
-    border-radius: 2px;
+  }
+  body {
+    line-height: 1;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  blockquote,
+  q {
+    quotes: none;
+  }
+  blockquote:before,
+  blockquote:after,
+  q:before,
+  q:after {
+    content: "";
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
   }
 
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
+  .container {
+    font-family: "Manrope", sans-serif;
   }
-
-  .buttonheader {
-    background-color: #f84646;
-    font-weight: 700;
-    font-size: 14px;
-    width: 91px;
-    height: 40px;
-    border-radius: 10px;
-    border: none;
-    color: #FFFFFF;
-  }
-
-
-  /*Hero*/
-
-  .titreheromobile {
-    font-size: 42px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-
-  .boutonetinput {
-    background-color:#FFFFFF;
-    height: 100vh;
-    width: 335px;
-    height: 59px;
-    border-radius: 10px;
-    overflow: hidden;
-  }
-
-  .fondinput {
-    padding: 4px 6px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .boutonrougehero {
-    background-color: #f84646;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    color: #FFFFFF;
-    width: 90px;
-    height: 50px;
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .boutonrougehero:hover {
-    background-color: purple;
-  } 
-
-  .flexhero {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .inphero {
-    border:none;
-    font-size: 14px;
-    font-weight: 400;
-  }
-
-
-
-
-  /*RESPONSIVE*/
 
   /* --- "Bootstrap-like" breakpoints (inspirés) ---
-   sm: 576px
-   md: 768px
-   lg: 992px
-   xl: 1200px
-   xxl: 1400px
-*/
+       sm: 576px
+       md: 768px
+       lg: 992px
+       xl: 1200px
+       xxl: 1400px
+    */
 
-   /* reponsive header */
+  /*-------------ALL HEADERS---------------*/
 
+  @media screen and (min-width: 299.9px) {
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 16px;
+      color: transparent;
+    }
 
-  @media screen and (min-width: 300px) {
-
-    .header {
-      position: fixed;
-      top: 0;
-      left: 0;
+    /* Nav (mobile par défaut) */
+    .nav {
+      display: none; /* cachée en mobile */
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 12px;
       width: 100%;
-      z-index: 1000;
-      background-color: transparent
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      padding: 10px 8px;
+      border-radius: 8px;
+    }
+
+    /* Checkbox cachée */
+    .nav-toggle {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    /* Burger visible en mobile */
+    .burger {
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+    }
+
+    .burger span {
+      display: block;
+      height: 2px;
+      background: #111;
+      border-radius: 999px;
+    }
+
+    /* Quand checked, on affiche le menu */
+    .nav-toggle:checked ~ .nav {
+      display: flex;
+    }
+
+    /* Petit effet burger -> croix (optionnel, toujours CSS only) */
+    .nav-toggle:checked + .burger span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle:checked + .burger span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-toggle:checked + .burger span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .burger span {
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    .buttonheader {
+      background-color: #f84646;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+      width: 91px;
+      height: 40px;
+    }
   }
 
-    .navheader {
-     display: none;
-  } 
+  /* header sm: 576px */
 
-   .burger {
-    display: flex;
-   }
-  
+  @media screen and (min-width: 575.9px) {
+    .site-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 16px;
+      color: transparent;
+    }
 
-   .burger {
-    padding-left: 20px;
-   }
+    /* Nav (mobile par défaut) */
+    .nav {
+      display: none; /* cachée en mobile */
+      flex-direction: column;
+      gap: 10px;
+      padding-top: 12px;
+      width: 100%;
+    }
 
-   .buttonheader {
-    margin-right: 20px;
-   }
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      padding: 10px 8px;
+      border-radius: 8px;
+    }
 
- 
+    /* Checkbox cachée */
+    .nav-toggle {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
 
+    /* Burger visible en mobile */
+    .burger {
+      width: 32px;
+      height: 32px;
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 6px;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+    }
 
-  @media screen and (min-width: 550px) {
+    .burger span {
+      display: block;
+      height: 2px;
+      background: #111;
+      border-radius: 999px;
+    }
 
+    /* Quand checked, on affiche le menu */
+    .nav-toggle:checked ~ .nav {
+      display: flex;
+    }
 
-  .header {
-    position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     z-index: 1000;
-     background-color: transparent;
+    /* Petit effet burger -> croix (optionnel, toujours CSS only) */
+    .nav-toggle:checked + .burger span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-toggle:checked + .burger span:nth-child(2) {
+      opacity: 0;
+    }
+    .nav-toggle:checked + .burger span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+    .burger span {
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+    }
+
+    .buttonheader {
+      background-color: #f84646;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 14px;
+      border-radius: 5px;
+      border: none;
+      width: 91px;
+      height: 40px;
+    }
   }
 
-   .navheader {
-     display: none;
-  } 
-   .burger {
-    display: flex;
-   }
+  /* header lg: 992px */
 
-   .burger {
-    padding-left: 20px;
-   }
+  @media screen and (min-width: 991.9px) {
+    .site-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      padding: 35px 122px;
+    }
 
-   .buttonheader {
-    margin-right: 20px;
-   }
-}
+    .burger {
+      display: none;
+    }
 
+    .nav {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 700;
+      padding-top: 0;
+      gap: 12px;
+      padding-left: 300px;
+    }
 
-@media screen and (min-width: 992px) {
-
-   .burger {
-     display: none;
-  } 
-   .navheader {
-    display: flex;
-    padding-left: 320px;
-   }
-
-}
-
-
-@media screen and (min-width: 1320px) {
-  .navheader {
-    padding-left: 45%;
+    .nav a {
+      white-space: nowrap;
+    }
   }
 
-  .buttonheader {
-    margin-right: 40px;
-  }
-  
-}
+  /* header lg: 1440px */
 
-/*reponsive hero */
+  @media screen and (min-width: 1439.9px) {
+    .site-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      padding: 35px 122px;
+    }
 
-@media screen and (min-width: 300px) {
-  
-  .titreheromobile {
-    display: flex;
-    font-size: 26px;
-  }
+    .burger {
+      display: none;
+    }
 
-  .titreherodesktop {
-    display: none;
-  }
+    .nav {
+      display: flex;
+      flex-direction: row;
+      font-size: 14px;
+      font-weight: 700;
+      padding-top: 0;
+      gap: 12px;
+      padding-left: 500px;
+    }
 
-  .imgherodesktop {
-    display: none;
-  }
-
-  .paragrapheheromobile {
-    margin-bottom: 20px;
-    font-size: 14px;
-  }
-
-  .paragrapheherodesktop {
-    display: none;
+    .nav a {
+      white-space: nowrap;
+    }
   }
 
-    .imghero {
-    width: 100%;
-    margin: auto;
-    display: block;
+  /* header 1800px */
+
+  @media screen and (min-width: 1800px) {
+    .site-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      padding: 35px 122px;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      font-weight: 700;
+      padding-top: 0;
+      gap: 12px;
+      padding-left: 1000px;
+    }
+
+    .nav a {
+      white-space: nowrap;
+    }
+
+    .buttonheader {
+      margin-right: 0px;
+      font-size: 18px;
+    }
   }
 
-  .imgherodesktop {
-    display: none;
+  /* header 2550px */
+
+  @media screen and (min-width: 2549px) {
+    .site-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 35px;
+      padding: 35px 122px;
+    }
+
+    .burger {
+      display: none;
+    }
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      font-size: 18px;
+      font-weight: 700;
+      padding-top: 0;
+      gap: 12px;
+      padding-left: 1500px;
+    }
+
+    .nav a {
+      white-space: nowrap;
+    }
+
+    .buttonheader {
+      margin-right: 0px;
+      font-size: 18px;
+    }
   }
-  
-
-  .hero {
-    position: relative;
-  }
-
-  .flexhero {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-  }
-
-  .boutonetinput {
-
-    width: 250px;
-
-  }
-
-  }
-
-
-}
-
-
-@media screen and (min-width: 550px) {
-
-
-  .titreheromobile {
-    display: flex;
-  }
-
-  .titreherodesktop {
-    display: none;
-  }
-
-  .imghero {
-    width: 375px;
-    height: 601px;
-    width: 100%;
-  }
-
-  .imgherodesktop {
-    display: none;
-  }
-
-  .paragrapheherodesktop {
-    display: none;
-  }
-
- .paragrapheheromobile {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 43px;
-  }
-
-
-.hero {
-  position: relative;
-}
-
-.flexhero {
-  position: absolute;
-  top:20%;
-  left: 30%;
-} 
-
- .boutonetinput {
-
-    width: 335px;
-
-  }
-
-
-}
- 
- @media screen and (min-width: 992px) {
-
-  .hero {
-    position: relative;
-  }
-
-  .flexhero {
-    position: absolute;
-    top: 30%;
-    left:2%;
-  }
-
-  .titreheromobile {
-    display: none;
-  }
-
-  .titreherodesktop {
-    display: flex;
-    font-size: 64px;
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-
-  .paragrapheherodesktop {
-    display: flex;
-    font-size: 20px;
-    font-weight: 400;
-    margin-bottom: 50px;
-  }
- 
-
- .paragrapheheromobile {
-  display: none;
- }
-
- .imgherodesktop {
-    display: flex;
-    width: 1024px;
-    height: 647px;
-    width: 100%;
- }
-
- .imghero {
-  display: none;
- }
-
-  .boutonetinput {
-
-    width: 422px;
-
-  }
-  
-}
-
-/*responsive Kalite*/
-
-@media screen and (min-width: 300px) {
-
-  .mobilekalite {
-    display:flex;
-    flex-direction:column;
-    text-align: center;
-    gap:15px;
-  }
-
-  .titlekalitemobile {
-    margin-top: 60px;
-    font-weight: 800;
-    font-size: 24px;
-  }
-
-  .desktopkalite {
-    display:none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-
-.mobilekalite {
-  display: none;
-}
-
-.desktopkalite {
-  display:flex;
-  flex-direction:column;
-  text-align: center;
-  gap: 30px;
-}
-
-.titlekalitedesktop {
-  margin-top: 120px;
-  font-weight: 800;
-  font-size: 36px;
-}
-}
-  
-
-
-
-
 </style>
